@@ -8,6 +8,7 @@ app.get("/", (req, res) => {
   res.send("Is working well ann will addmore things ib the future!");
 });
 
+//Some of the thisngs added
 // const planRoutes = require("./routes/plan");
 // app.use("/plan", planRoutes);
 
