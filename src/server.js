@@ -48,6 +48,4 @@ app.get("/", (req, res) => {
 // app.use("/project", project);
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+app.listen();
