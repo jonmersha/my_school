@@ -1,5 +1,5 @@
-function selectAll(tableName){
-    return `SELECT * FROM ${tableName}`;
-
+function selectAll(tableName) {
+  return `SELECT * FROM ${tableName}`;
 }
-module.exports={selectAll}
+//
+module.exports = { selectAll };

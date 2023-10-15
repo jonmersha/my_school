@@ -1,8 +1,9 @@
-function deleteScript(tableName,json){
-    const deleteConditions = Object.entries(json)
-  .map(([key, value]) => `${key} = '${value}'`)
-  .join(' AND ');
+function deleteScript(tableName, json) {
+  const deleteConditions = Object.entries(json)
+    .map(([key, value]) => `${key} = '${value}'`)
+    .join(" AND ");
   const deleteScript = `DELETE FROM ${tableName} WHERE ${deleteConditions}`;
-    return deleteScript;
+  return deleteScript;
 }
-module.exports={deleteScript}
+
+module.exports = { deleteScript };

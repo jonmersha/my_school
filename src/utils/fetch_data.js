@@ -1,26 +1,24 @@
-
-const mysql = require('mysql');
-
+const mysql = require("mysql");
 
 function fetchDataFromMySQL(query, callback) {
   const connection = mysql.createConnection({
     host: "localhost",
     user: "beshegercom_school",
-    database:"beshegercom_school",
-    password: "Yohannes@hira123321"
-
+    database: "beshegercom_school",
+    password: "Yohannes@hira123321",
   });
 
+  //
   connection.connect((error) => {
     if (error) {
-      console.error('Failed to connect to the database:', error);
+      console.error("Failed to connect to the database:", error);
       callback(error, null);
       return;
     }
 
     connection.query(query, (error, results) => {
       if (error) {
-        console.error('Failed to fetch data from MySQL:', error);
+        console.error("Failed to fetch data from MySQL:", error);
         callback(error, null);
       } else {
         callback(null, results);
@@ -28,9 +26,9 @@ function fetchDataFromMySQL(query, callback) {
 
       connection.end((error) => {
         if (error) {
-          console.error('Failed to close the database connection:', error);
+          console.error("Failed to close the database connection:", error);
         } else {
-          console.log('MySQL connection closed.');
+          console.log("MySQL connection closed.");
         }
       });
     });
