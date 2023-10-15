@@ -7,6 +7,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Is working well ann will addmore things ib the future!");
 });
+app.get("/home", (req, res) => {
+  res.send("Home Routing added");
+});
 
 //Some of the thisngs added
 // const planRoutes = require("./routes/plan");
