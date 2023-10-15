@@ -28,8 +28,8 @@ app.get("/", (req, res) => {
 // app.use("/org", orgStructure);
 
 //User Managemnt
-const userManagement = require("./routes/user_routes");
-app.use("/user", userManagement);
+// const userManagement = require("./routes/user_routes");
+// app.use("/user", userManagement);
 
 // //Reporting
 // const reporting = require("./routes/reporting");
